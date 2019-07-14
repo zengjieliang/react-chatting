@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C1C1C1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #eee;
+}
+.chatting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45vw;
+  height: 90vh;
+  border: 1px solid lightgray;
+  min-width: 30rem;
+  min-height: 30rem;
+}
+.chatting .header {
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-bottom: 1px solid lightgray;
+}
+.chatting .message-list {
+  flex: 1;
+}
+.chatting .message-list .message-box {
+  padding: 0 2rem;
+}
+.chatting .message-list .message-box .message-item {
+  padding: 0.5rem 0;
+  display: flex;
+}
+.chatting .message-list .message-box .message-notification {
+  color: lightgray;
+  justify-content: center;
+}
+.chatting .message-list .message-box .message-notification span {
+  padding: 0.5rem 0;
+}
+.chatting .message-list .message-box .message-from-other {
+  justify-content: flex-start;
+}
+.chatting .message-list .message-box .message-from-other span {
+  border: 1px solid lightgray;
+  color: black;
+  background-color: white;
+}
+.chatting .message-list .message-box .message-from-me {
+  justify-content: flex-end;
+}
+.chatting .message-list .message-box .message-from-me span {
+  color: white;
+  background-color: #0084ff;
+}
+.chatting .message-list .message-box .message-image {
+  max-width: 13rem;
+  max-height: 13rem;
+}
+.chatting .message-list .message-box .message-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
+}
+.chatting .footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  padding: 0.8rem;
+  flex-direction: column;
+}
+.chatting .footer .input-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.4rem 0;
+}
+.chatting .footer .input-button .type-input {
+  flex: 1;
+}
+.chatting .footer .enter-button {
+  margin: 0.4rem;
+  cursor: pointer;
+}
+.chatting .footer .radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+.chatting .footer .radio-group .radio-label {
+  margin: auto 0;
+}
+.chatting .footer .radio-group .radio-label input,
+.chatting .footer .radio-group .radio-label label {
+  cursor: pointer;
+}
+

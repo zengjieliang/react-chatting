@@ -1,0 +1,48 @@
+.message-item-index() {
+    .message-item {
+        padding: 0.5rem 0;
+        display: flex;
+    }
+
+    .message-none {
+        color: lightgray;
+        justify-content: center;
+
+        span {
+            padding: 0.5rem 0;
+        }
+    }
+
+    .message-from-other {
+        justify-content: flex-start;
+
+        span {
+            border: 1px solid lightgray;
+            color: black;
+            background-color: white;
+        }
+    }
+
+    .message-from-me {
+        justify-content: flex-end;
+
+        span {
+            color: white;
+            background-color: #0084ff;
+        }
+    }
+
+    .message-image {
+        max-width: 13rem;
+        max-height: 13rem;
+    }
+
+    .message-text {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+        padding: 0.4rem 1rem;
+        border-radius: 0.6rem;
+    }
+}
